@@ -18,12 +18,21 @@ public class Pizza extends Food {
 
     }
 
-    public String setName(String name) {
-        return name;
-
-    }
     @Override
-    public display(){
-        System.out.println(name + );
+    public void display() {
+        System.out.print(price + " kr " + name + " { ");
+        List<String> listPrint = toppings;
+        String seperator = "";
+        for (String string : listPrint) {
+            System.out.print(seperator);
+            System.out.print(string);
+            seperator = ", ";
+
+        }
+        System.out.println(" }");
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

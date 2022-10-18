@@ -1,29 +1,24 @@
 public class Food {
 
-    protected String name;
-    protected int price;
+   protected String name;
+   protected int price;
 
-    
-    public Food(String n, int p){
+   public Food(String name, int price) {
 
-        name = n;
-        price = p;
+      this.name = name;
+      this.price = price;
 
-     }
+   }
 
+   public int getPrice() {
+      return price;
 
-    public int getPrice(){
-       return price;
+   }
 
-    }
-    public void display(){
+   public void display() {
 
-       System.out.println( price + " kr " + name);
-      
-    }
+      System.out.println(price + " kr " + name);
 
-    
+   }
 
-   
-    
 }
