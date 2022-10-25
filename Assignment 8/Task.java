@@ -12,8 +12,24 @@ public class Task {
 
     @Override
     public String toString() {
+        String statement = "";
+        switch (priority) {
+            case 1:
+                statement = "very important";
+                break;
+            case 2:
+                statement = "important";
+                break;
+            case 3:
+                statement = "unimportant";
+                break;
+            case 4:
+                statement = "after learn Portuguese";
 
-        return task + " takes " + workload + " minutes and has priority " + priority;
+        }
+
+        return task + " takes " + workload + " minutes and has priority " + statement;
+
     }
 
 }
