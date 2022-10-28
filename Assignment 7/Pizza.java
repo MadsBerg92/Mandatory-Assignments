@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Pizza extends Food {
@@ -20,13 +21,15 @@ public class Pizza extends Food {
 
     @Override
     public void display() {
+
+
         System.out.print(price + " kr " + name + " { ");
         List<String> listPrint = toppings;
         String seperator = "";
         for (String string : listPrint) {
-            System.out.print(seperator);
-            System.out.print(string);
-            seperator = ", ";
+        System.out.print(seperator);
+        System.out.print(string);
+        seperator = ", ";
 
         }
         System.out.println(" }");
