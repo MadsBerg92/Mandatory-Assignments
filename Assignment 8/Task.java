@@ -25,11 +25,20 @@ public class Task {
                 break;
             case 4:
                 statement = "after learn Portuguese";
+                break;
 
         }
 
         return task + " takes " + workload + " minutes and has priority " + statement;
 
+    }
+
+    public int getWorkload() {
+        return workload;
+    }
+
+    public int getPriority() {
+        return priority;
     }
 
 }
